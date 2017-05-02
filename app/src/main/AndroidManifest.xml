@@ -29,8 +29,13 @@
         <activity
             android:name=".SMSTest"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
-        <activity android:name=".WeatherActivity"></activity>
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".WeatherActivity" />
+
+        <service
+            android:name=".service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
